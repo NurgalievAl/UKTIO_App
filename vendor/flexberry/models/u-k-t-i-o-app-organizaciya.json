@@ -1,0 +1,54 @@
+﻿{
+  "name": "UKTIO_AppOrganizaciya",
+  "modelName": "u-k-t-i-o-app-organizaciya",
+  "className": "Organizaciya",
+  "nameSpace": "UKTIO_App",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "nazvanie",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "OrganizaciyaE",
+      "modelName": "u-k-t-i-o-app-organizaciya",
+      "attrs": [
+        {
+          "name": "nazvanie",
+          "caption": "Название",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "OrganizaciyaL",
+      "modelName": "u-k-t-i-o-app-organizaciya",
+      "attrs": [
+        {
+          "name": "nazvanie",
+          "caption": "Название",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

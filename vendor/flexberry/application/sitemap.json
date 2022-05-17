@@ -1,0 +1,50 @@
+﻿{
+  "applicationCaption": "U k t i o_app",
+  "applicationTitle": "U k t i o_app",
+  "items": [
+    {
+      "link": null,
+      "menuName": "u-k-t-i-o-app",
+      "caption": "UKTIO_app",
+      "title": "UKTIO_app",
+      "children": [
+        {
+          "link": "u-k-t-i-o-app-dolzhnost-l",
+          "menuName": null,
+          "caption": "Dolzhnost",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "u-k-t-i-o-app-organizaciya-l",
+          "menuName": null,
+          "caption": "Organizaciya",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "u-k-t-i-o-app-sotrudnik-l",
+          "menuName": null,
+          "caption": "Sotrudnik",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "u-k-t-i-o-app-oborudovanie-l",
+          "menuName": null,
+          "caption": "Oborudovanie",
+          "title": "",
+          "children": null
+        },
+        {
+          "link": "u-k-t-i-o-app-tip-oborudovaniya-l",
+          "menuName": null,
+          "caption": "Tip oborudovaniya",
+          "title": "",
+          "children": null
+        }
+      ]
+    }
+  ],
+  "mobile": true
+}

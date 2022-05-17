@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "u-k-t-i-o-app-sotrudnik-e",
+  "editForm": "u-k-t-i-o-app-sotrudnik-e",
+  "external": false,
+  "caption": "Sotrudnik",
+  "name": "UKTIO_AppSotrudnikL",
+  "className": "SotrudnikL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "u-k-t-i-o-app-sotrudnik",
+      "modelProjection": "SotrudnikL"
+    }
+  ]
+}

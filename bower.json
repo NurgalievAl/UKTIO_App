@@ -1,0 +1,14 @@
+{
+  "name": "ember-app",
+  "dependencies": {
+    "jquery-mockjax": "~2.2.1",
+    "semantic-ui": "2.4.1",
+    "blob-polyfill": "~1.0.20150320",
+    "devicejs": "0.2.7",
+    "seiyria-bootstrap-slider": "6.0.6",
+    "blueimp-file-upload": "9.11.2",
+    "jquery-minicolors": "2.3.4",
+    "js-beautify": "1.6.4",
+    "moment": "~2.22.0"
+  }
+}

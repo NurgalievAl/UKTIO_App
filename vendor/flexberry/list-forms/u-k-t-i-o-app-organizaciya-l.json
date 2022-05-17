@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "u-k-t-i-o-app-organizaciya-e",
+  "editForm": "u-k-t-i-o-app-organizaciya-e",
+  "external": false,
+  "caption": "Organizaciya",
+  "name": "UKTIO_AppOrganizaciyaL",
+  "className": "OrganizaciyaL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "u-k-t-i-o-app-organizaciya",
+      "modelProjection": "OrganizaciyaL"
+    }
+  ]
+}

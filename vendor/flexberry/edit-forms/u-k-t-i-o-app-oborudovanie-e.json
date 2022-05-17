@@ -1,0 +1,31 @@
+﻿{
+  "propertyLookup": [
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "TipOborudovaniya",
+      "projection": "TipOborudovaniyaL",
+      "detailModelName": null
+    },
+    {
+      "master": null,
+      "displayAttributeName": null,
+      "required": false,
+      "relationName": "Sotrudnik",
+      "projection": "SotrudnikL",
+      "detailModelName": null
+    }
+  ],
+  "external": false,
+  "caption": "Oborudovanie",
+  "name": "UKTIO_AppOborudovanieE",
+  "className": "OborudovanieE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "u-k-t-i-o-app-oborudovanie",
+      "modelProjection": "OborudovanieE"
+    }
+  ]
+}

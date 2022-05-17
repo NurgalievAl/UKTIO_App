@@ -1,0 +1,278 @@
+﻿{
+  "name": "UKTIO_AppOborudovanie",
+  "modelName": "u-k-t-i-o-app-oborudovanie",
+  "className": "Oborudovanie",
+  "nameSpace": "UKTIO_App",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "invNomer",
+      "type": "number",
+      "flexberryType": "int",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "naimenovanie",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "harakteristiki",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "dataPokupki",
+      "type": "date",
+      "flexberryType": "DateTime",
+      "notNull": false,
+      "defaultValue": "Now",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "cena",
+      "type": "decimal",
+      "flexberryType": "double",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    },
+    {
+      "name": "status",
+      "type": "u-k-t-i-o-app-t-status",
+      "flexberryType": "tStatus",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "tipOborudovaniya",
+      "relatedTo": "u-k-t-i-o-app-tip-oborudovaniya",
+      "inverse": null
+    },
+    {
+      "polymorphic": false,
+      "presence": true,
+      "name": "sotrudnik",
+      "relatedTo": "u-k-t-i-o-app-sotrudnik",
+      "inverse": null
+    }
+  ],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "OborudovanieE",
+      "modelName": "u-k-t-i-o-app-oborudovanie",
+      "attrs": [
+        {
+          "name": "invNomer",
+          "caption": "Инвентарный номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "naimenovanie",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "harakteristiki",
+          "caption": "Характеристики",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "dataPokupki",
+          "caption": "Дата покупки",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "cena",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "status",
+          "caption": "Статус",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": "Naimenovanie",
+          "lookupValueField": "naimenovanie",
+          "relationName": "TipOborudovaniya",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "naimenovanie",
+              "caption": "Наименование",
+              "hidden": true,
+              "index": 7
+            }
+          ],
+          "index": 6,
+          "type": "standard",
+          "caption": "Тип оборудования",
+          "name": "tipOborudovaniya",
+          "relatedTo": "u-k-t-i-o-app-tip-oborudovaniya",
+          "inverse": null
+        },
+        {
+          "lookupValue": "FIO",
+          "lookupValueField": "fIO",
+          "relationName": "Sotrudnik",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "fIO",
+              "caption": "",
+              "hidden": true,
+              "index": 9
+            },
+            {
+              "name": "imya",
+              "caption": "",
+              "hidden": true,
+              "index": 10
+            },
+            {
+              "name": "otchestvo",
+              "caption": "",
+              "hidden": true,
+              "index": 11
+            },
+            {
+              "name": "familia",
+              "caption": "Familia",
+              "hidden": true,
+              "index": 12
+            }
+          ],
+          "index": 8,
+          "type": "standard",
+          "caption": "Сотрудник",
+          "name": "sotrudnik",
+          "relatedTo": "u-k-t-i-o-app-sotrudnik",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    },
+    {
+      "name": "OborudovanieL",
+      "modelName": "u-k-t-i-o-app-oborudovanie",
+      "attrs": [
+        {
+          "name": "invNomer",
+          "caption": "Инвентарный номер",
+          "hidden": false,
+          "index": 0
+        },
+        {
+          "name": "naimenovanie",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 1
+        },
+        {
+          "name": "harakteristiki",
+          "caption": "Характеристики",
+          "hidden": false,
+          "index": 2
+        },
+        {
+          "name": "dataPokupki",
+          "caption": "Дата покупки",
+          "hidden": false,
+          "index": 3
+        },
+        {
+          "name": "cena",
+          "caption": "Цена",
+          "hidden": false,
+          "index": 4
+        },
+        {
+          "name": "status",
+          "caption": "Статус",
+          "hidden": false,
+          "index": 5
+        }
+      ],
+      "belongsTo": [
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "TipOborudovaniya",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "naimenovanie",
+              "caption": "Тип оборудования",
+              "hidden": false,
+              "index": 6
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Тип оборудования",
+          "name": "tipOborudovaniya",
+          "relatedTo": "u-k-t-i-o-app-tip-oborudovaniya",
+          "inverse": null
+        },
+        {
+          "lookupValue": null,
+          "lookupValueField": null,
+          "relationName": "Sotrudnik",
+          "belongsTo": [],
+          "hidden": false,
+          "attrs": [
+            {
+              "name": "fIO",
+              "caption": "Сотрудник",
+              "hidden": false,
+              "index": 7
+            }
+          ],
+          "index": -1,
+          "type": "default",
+          "caption": "Сотрудник",
+          "name": "sotrudnik",
+          "relatedTo": "u-k-t-i-o-app-sotrudnik",
+          "inverse": null
+        }
+      ],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

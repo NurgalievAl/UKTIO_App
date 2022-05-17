@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "u-k-t-i-o-app-dolzhnost-e",
+  "editForm": "u-k-t-i-o-app-dolzhnost-e",
+  "external": false,
+  "caption": "Dolzhnost",
+  "name": "UKTIO_AppDolzhnostL",
+  "className": "DolzhnostL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "u-k-t-i-o-app-dolzhnost",
+      "modelProjection": "DolzhnostL"
+    }
+  ]
+}

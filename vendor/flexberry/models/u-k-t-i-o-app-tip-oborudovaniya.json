@@ -1,0 +1,54 @@
+﻿{
+  "name": "UKTIO_AppTipOborudovaniya",
+  "modelName": "u-k-t-i-o-app-tip-oborudovaniya",
+  "className": "TipOborudovaniya",
+  "nameSpace": "UKTIO_App",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "naimenovanie",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": false,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "TipOborudovaniyaE",
+      "modelName": "u-k-t-i-o-app-tip-oborudovaniya",
+      "attrs": [
+        {
+          "name": "naimenovanie",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "TipOborudovaniyaL",
+      "modelName": "u-k-t-i-o-app-tip-oborudovaniya",
+      "attrs": [
+        {
+          "name": "naimenovanie",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

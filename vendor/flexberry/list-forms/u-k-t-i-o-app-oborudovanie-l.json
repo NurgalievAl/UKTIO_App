@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "u-k-t-i-o-app-oborudovanie-e",
+  "editForm": "u-k-t-i-o-app-oborudovanie-e",
+  "external": false,
+  "caption": "Oborudovanie",
+  "name": "UKTIO_AppOborudovanieL",
+  "className": "OborudovanieL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "u-k-t-i-o-app-oborudovanie",
+      "modelProjection": "OborudovanieL"
+    }
+  ]
+}

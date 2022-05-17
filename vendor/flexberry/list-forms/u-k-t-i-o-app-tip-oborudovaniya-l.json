@@ -1,0 +1,15 @@
+﻿{
+  "newForm": "u-k-t-i-o-app-tip-oborudovaniya-e",
+  "editForm": "u-k-t-i-o-app-tip-oborudovaniya-e",
+  "external": false,
+  "caption": "Tip oborudovaniya",
+  "name": "UKTIO_AppTipOborudovaniyaL",
+  "className": "TipOborudovaniyaL",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "u-k-t-i-o-app-tip-oborudovaniya",
+      "modelProjection": "TipOborudovaniyaL"
+    }
+  ]
+}

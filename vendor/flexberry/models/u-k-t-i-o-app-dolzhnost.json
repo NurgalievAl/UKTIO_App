@@ -1,0 +1,54 @@
+﻿{
+  "name": "UKTIO_AppDolzhnost",
+  "modelName": "u-k-t-i-o-app-dolzhnost",
+  "className": "Dolzhnost",
+  "nameSpace": "UKTIO_App",
+  "parentModelName": null,
+  "parentClassName": null,
+  "attrs": [
+    {
+      "name": "naimenovanie",
+      "type": "string",
+      "flexberryType": "string",
+      "notNull": true,
+      "defaultValue": "",
+      "stored": true,
+      "ordered": false
+    }
+  ],
+  "belongsTo": [],
+  "hasMany": [],
+  "projections": [
+    {
+      "name": "DolzhnostE",
+      "modelName": "u-k-t-i-o-app-dolzhnost",
+      "attrs": [
+        {
+          "name": "naimenovanie",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    },
+    {
+      "name": "DolzhnostL",
+      "modelName": "u-k-t-i-o-app-dolzhnost",
+      "attrs": [
+        {
+          "name": "naimenovanie",
+          "caption": "Наименование",
+          "hidden": false,
+          "index": 0
+        }
+      ],
+      "belongsTo": [],
+      "hasMany": []
+    }
+  ],
+  "stored": true,
+  "offline": true,
+  "external": false
+}

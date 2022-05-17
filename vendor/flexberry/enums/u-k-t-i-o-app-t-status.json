@@ -1,0 +1,11 @@
+﻿{
+  "nameSpace": "UKTIO_App",
+  "className": "tStatus",
+  "enumObjects": {
+    "VEkspluatacii": "В эксплуатации",
+    "Prostaivaet": "Простаивает",
+    "Neispravno": "Неисправно",
+    "Spisano": "Списано",
+    "VRemonte": "В ремонте"
+  }
+}

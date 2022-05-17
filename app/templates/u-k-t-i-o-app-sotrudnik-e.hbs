@@ -1,0 +1,127 @@
+<h3 class="ui header">{{t "forms.u-k-t-i-o-app-sotrudnik-e.caption"}}</h3>
+
+<form class="ui form flexberry-vertical-form" role="form">
+  {{flexberry-error error=error}}
+  <div class="field">
+    <div class="flexberry-edit-panel">
+      {{#unless readonly}}
+        <button class="ui button save-button" {{action "save"}}>
+          {{t "forms.edit-form.save-button-text"}}
+        </button>
+        {{#unless model.isNew}}
+          <button class="ui button save-del-button" {{action "delete"}}>
+            {{t "forms.edit-form.delete-button-text"}}
+          </button>
+        {{/unless}}
+      {{/unless}}
+      <button class="ui button close-button" {{action "close"}}>
+        {{t "forms.edit-form.close-button-text"}}
+      </button>
+    </div>
+  </div>
+  <div class="field flexberry-validationsummary-container">
+    <div class="sixteen wide">
+      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
+    </div>
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.familia
+      class=(if (v-get validationObject "familia" "isInvalid") "error")
+      label=(t "forms.u-k-t-i-o-app-sotrudnik-e.familia-caption")
+      data-test-u-k-t-i-o-app-sotrudnik-e-familia=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "familia" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.imya
+      class=(if (v-get validationObject "imya" "isInvalid") "error")
+      label=(t "forms.u-k-t-i-o-app-sotrudnik-e.imya-caption")
+      data-test-u-k-t-i-o-app-sotrudnik-e-imya=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "imya" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.otchestvo
+      class=(if (v-get validationObject "otchestvo" "isInvalid") "error")
+      label=(t "forms.u-k-t-i-o-app-sotrudnik-e.otchestvo-caption")
+      data-test-u-k-t-i-o-app-sotrudnik-e-otchestvo=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "otchestvo" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.tel
+      class=(if (v-get validationObject "tel" "isInvalid") "error")
+      label=(t "forms.u-k-t-i-o-app-sotrudnik-e.tel-caption")
+      data-test-u-k-t-i-o-app-sotrudnik-e-tel=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "tel" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.email
+      class=(if (v-get validationObject "email" "isInvalid") "error")
+      label=(t "forms.u-k-t-i-o-app-sotrudnik-e.email-caption")
+      data-test-u-k-t-i-o-app-sotrudnik-e-email=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "email" "message")}}
+  </div>
+  <div class="field">
+    {{flexberry-field
+      readonly=readonly
+      value=model.nomerKabineta
+      class=(if (v-get validationObject "nomerKabineta" "isInvalid") "error")
+      label=(t "forms.u-k-t-i-o-app-sotrudnik-e.nomerKabineta-caption")
+      data-test-u-k-t-i-o-app-sotrudnik-e-nomerKabineta=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "nomerKabineta" "message")}}
+  </div>
+  <div class="field">
+    <label>{{t "forms.u-k-t-i-o-app-sotrudnik-e.dolzhnost-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.dolzhnost
+      class=(if (v-get validationObject "dolzhnost" "isInvalid") "error")
+      displayAttributeName="naimenovanie"
+      autocomplete=true
+      relationName="dolzhnost"
+      projection="DolzhnostL"
+      title=(t "forms.u-k-t-i-o-app-sotrudnik-e.dolzhnost-caption")
+      readonly=readonly
+      componentName="dolzhnostLookup"
+      class=(if (v-get validationObject "dolzhnost" "isInvalid") "error")
+      data-test-u-k-t-i-o-app-sotrudnik-e-dolzhnost=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "dolzhnost" "message")}}
+  </div>
+
+  <div class="field">
+    <label>{{t "forms.u-k-t-i-o-app-sotrudnik-e.organizaciya-caption"}}</label>
+    {{flexberry-lookup
+      choose="showLookupDialog"
+      remove="removeLookupValue"
+      value=model.organizaciya
+      class=(if (v-get validationObject "organizaciya" "isInvalid") "error")
+      displayAttributeName="nazvanie"
+      autocomplete=true
+      relationName="organizaciya"
+      projection="OrganizaciyaL"
+      title=(t "forms.u-k-t-i-o-app-sotrudnik-e.organizaciya-caption")
+      readonly=readonly
+      componentName="organizaciyaLookup"
+      class=(if (v-get validationObject "organizaciya" "isInvalid") "error")
+      data-test-u-k-t-i-o-app-sotrudnik-e-organizaciya=true
+    }}
+    {{flexberry-validationmessage error=(v-get validationObject "organizaciya" "message")}}
+  </div>
+
+</form>

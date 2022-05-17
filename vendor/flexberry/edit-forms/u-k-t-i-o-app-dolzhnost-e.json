@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Dolzhnost",
+  "name": "UKTIO_AppDolzhnostE",
+  "className": "DolzhnostE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "u-k-t-i-o-app-dolzhnost",
+      "modelProjection": "DolzhnostE"
+    }
+  ]
+}
