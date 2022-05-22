@@ -31,6 +31,7 @@ Router.map(function () {
   { path: 'u-k-t-i-o-app-tip-oborudovaniya-e/:id' });
   this.route('u-k-t-i-o-app-tip-oborudovaniya-e.new',
   { path: 'u-k-t-i-o-app-tip-oborudovaniya-e/new' });
+  this.route('login');
 });
 
 export default Router;

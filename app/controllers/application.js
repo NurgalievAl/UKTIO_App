@@ -165,6 +165,14 @@ export default Controller.extend({
         $('.ui.sidebar.main.menu').sidebar('attach events', '.ui.sidebar.main.menu .item a', 'hide');
         this.set('_hideEventIsAttached', true);
       }
-    }
+    },
+
+    /**
+      Осуществляет выход текущего пользователя из приложения и переход к логин-форме.
+      @method actions.logout
+    */
+    logout() {
+      this.transitionToRoute('login');
+    },
   }
 });

@@ -1,1 +1,27 @@
-{{outlet}}
+<div class="flexberry-container">
+  <div class="ui stackable doubling grid">
+    <div class="row">
+
+      <div class="sixteen wide middle computer eight wide large screen eight wide widescreen column">
+        <div class="ui two column grid stackable">
+          <div class="column">
+            {{#link-to 'u-k-t-i-o-app-sotrudnik-l' class='ui card'}}
+              <div class="content">
+                <i class="icon user outline card-icon" ></i>
+                <div class="header">{{t "forms.u-k-t-i-o-app-sotrudnik-l.caption"}}</div>
+              </div>
+            {{/link-to}}
+          </div>
+          <div class="column">
+            {{#link-to 'u-k-t-i-o-app-oborudovanie-l' class='ui card'}}
+              <div class="content">
+                <i class="icon comment outline card-icon" ></i>
+                <div class="header">{{t "forms.u-k-t-i-o-app-oborudovanie-l.caption"}}</div>
+              </div>
+            {{/link-to}}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
