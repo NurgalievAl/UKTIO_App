@@ -11,7 +11,7 @@ export default {
         __caption__: 'Отчество'
       },
       tel: {
-        __caption__: 'Телефонl'
+        __caption__: 'Телефон'
       },
       email: {
         __caption__: 'Емейл'
@@ -79,7 +79,7 @@ export default {
       __caption__: 'fIO'
     },
     tel: {
-      __caption__: 'Телефонl'
+      __caption__: 'Телефон'
     },
     email: {
       __caption__: 'Емейл'

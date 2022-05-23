@@ -105,7 +105,7 @@ export let defineProjections = function (modelClass) {
     familia: attr('Фамилия', { index: 0 }),
     imya: attr('Имя', { index: 1 }),
     otchestvo: attr('Отчество', { index: 2 }),
-    tel: attr('Телефонl', { index: 3 }),
+    tel: attr('Телефон', { index: 3 }),
     email: attr('Емейл', { index: 4 }),
     nomerKabineta: attr('Номер кабинета', { index: 5 }),
     dolzhnost: belongsTo('u-k-t-i-o-app-dolzhnost', 'Должность', {

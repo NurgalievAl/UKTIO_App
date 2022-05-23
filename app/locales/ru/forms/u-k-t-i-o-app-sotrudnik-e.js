@@ -3,7 +3,7 @@ export default {
   'familia-caption': 'Фамилия',
   'imya-caption': 'Имя',
   'otchestvo-caption': 'Отчество',
-  'tel-caption': 'Телефонl',
+  'tel-caption': 'Телефон',
   'email-caption': 'Емейл',
   'nomerKabineta-caption': 'Номер кабинета',
   'dolzhnost-caption': 'Должность',
