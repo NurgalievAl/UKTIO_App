@@ -5,7 +5,8 @@ set -e
 
 git config user.name "NurgalievAl"
 git config user.email "siriusiii1209@gmail.com"
-
+git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+git config --local user.name "github-actions[bot]"
 echo "Start to deploy..."
 
 git checkout --orphan gh-pages
@@ -14,9 +15,7 @@ ls -l
 git --work-tree ./dist add --all
 git --work-tree ./dist commit -m "Deploy to GitHub Pages"
 git push -f origin HEAD:gh-pages
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        branch: ${{ github.ref }}
+
 rm -r dist
 
 git checkout -f main
