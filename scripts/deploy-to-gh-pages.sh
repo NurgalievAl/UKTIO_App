@@ -14,6 +14,9 @@ ls -l
 git --work-tree ./dist add --all
 git --work-tree ./dist commit -m "Deploy to GitHub Pages"
 git push -f origin HEAD:gh-pages
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        branch: ${{ github.ref }}
 rm -r dist
 
 git checkout -f main
