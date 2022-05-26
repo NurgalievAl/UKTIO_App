@@ -30,28 +30,5 @@ jobs:
       - name: Build Application
         run: npx ember build
 
-      - name: Commit files
-        run: |
-          git config --local user.email "siriusiii1209@gmail.com"
-          git config --local user.name "NurgalievAl"
-          echo "Start to deploy..."
-
-          git checkout --orphan gh-pages
-          ls -l
-          
-          git --work-tree ./dist add --all
-          git --work-tree ./dist commit -m "Deploy to GitHub Pages"
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages
-      - name: Remove branch
-        run: |
-          rm -r dist
-
-          git checkout -f main
-          git branch -D gh-pages
-
-          echo "Successfully deployed"
+      - name: Run deploy script
+        run: sh ./scripts/deploy-to-gh-pages.sh
