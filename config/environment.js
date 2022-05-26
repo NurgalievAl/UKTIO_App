@@ -2,7 +2,7 @@
 'use strict';
 
 module.exports = function(environment) {
-  var backendUrl = 'http://localhost:6500';
+  var backendUrl = 'http://uktio.somee.com';
 
   if (environment === 'development-loc') {
     // Use `ember s -e development-loc` command for local backend usage.
