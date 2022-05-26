@@ -20,6 +20,13 @@ jobs:
       - name: Clean install dependencies
         run: npm ci
 
+      - name: Install bower
+        run: |
+         set -x
+         node -v
+         npm install -g bower
+         bower install
+       
       - name: Build Application
         run: npx ember build
 
