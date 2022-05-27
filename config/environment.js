@@ -27,7 +27,7 @@ module.exports = function(environment) {
 
     APP: {
       // Application name
-      name: 'UKTIO_App',
+      name: 'ember-app',
 
       // Here you can pass flags/options to your application instance
       // when it is created
