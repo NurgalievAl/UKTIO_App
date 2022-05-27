@@ -10,7 +10,7 @@ module.exports = function(environment) {
   }
 
   let ENV = {
-    modulePrefix: 'ember-app',
+    modulePrefix: 'UKTIO_App',
     environment,
     rootURL: '/UKTIO_App',
     locationType: 'auto',
